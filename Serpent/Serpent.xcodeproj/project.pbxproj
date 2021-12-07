@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,8 +17,6 @@
 		01BBEFD51DE1D52D003AC718 /* Cashier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BBEFD21DE1D50F003AC718 /* Cashier.framework */; };
 		01BBEFD61DE1D533003AC718 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BBEFCB1DE1D50F003AC718 /* Alamofire.framework */; };
 		01BBEFD71DE1D533003AC718 /* Cashier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BBEFCD1DE1D50F003AC718 /* Cashier.framework */; };
-		01BBEFD81DE1D537003AC718 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BBEFBE1DE1D50F003AC718 /* Alamofire.framework */; };
-		01BBEFD91DE1D537003AC718 /* Cashier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BBEFC11DE1D50F003AC718 /* Cashier.framework */; };
 		01BBEFDA1DE1D540003AC718 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BBEFB31DE1D50E003AC718 /* Alamofire.framework */; };
 		01BBEFDB1DE1D540003AC718 /* Cashier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BBEFB61DE1D50F003AC718 /* Cashier.framework */; };
 		01C706BA1C9BEAF50024E94A /* StringInitializableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C706B51C9BEAF50024E94A /* StringInitializableTests.swift */; };
@@ -169,6 +167,10 @@
 		830175CE1D97037D00B85378 /* NilTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830175CB1D97037D00B85378 /* NilTestModel.swift */; };
 		83F3AFCF1CE92DB300D47725 /* BridgingBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3AFCD1CE92DB300D47725 /* BridgingBoxTests.swift */; };
 		83F3AFD01CE92DB300D47725 /* CashierExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3AFCE1CE92DB300D47725 /* CashierExtensionTests.swift */; };
+		8646BDAB275F6F7A0027D0BC /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646BDA7275F6E930027D0BC /* Alamofire.xcframework */; };
+		8646BDAC275F6F7A0027D0BC /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8646BDA7275F6E930027D0BC /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8646BDAE275F6F7B0027D0BC /* Cashier.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8646BDA8275F6E930027D0BC /* Cashier.xcframework */; };
+		8646BDAF275F6F7B0027D0BC /* Cashier.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8646BDA8275F6E930027D0BC /* Cashier.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,13 +197,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8646BDAD275F6F7A0027D0BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8646BDAC275F6F7A0027D0BC /* Alamofire.xcframework in Embed Frameworks */,
+				8646BDAF275F6F7B0027D0BC /* Cashier.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0124E1101F2803CB00FCD29C /* ArrayTestOneObject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ArrayTestOneObject.json; sourceTree = "<group>"; };
 		016C123F1F28065D00A4FCED /* BadArrayTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BadArrayTest.json; sourceTree = "<group>"; };
 		01BBEFB31DE1D50E003AC718 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		01BBEFB61DE1D50F003AC718 /* Cashier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cashier.framework; sourceTree = "<group>"; };
-		01BBEFBE1DE1D50F003AC718 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		01BBEFC11DE1D50F003AC718 /* Cashier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cashier.framework; sourceTree = "<group>"; };
 		01BBEFCB1DE1D50F003AC718 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		01BBEFCD1DE1D50F003AC718 /* Cashier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cashier.framework; sourceTree = "<group>"; };
 		01BBEFD01DE1D50F003AC718 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
@@ -261,6 +276,8 @@
 		830175CB1D97037D00B85378 /* NilTestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NilTestModel.swift; sourceTree = "<group>"; };
 		83F3AFCD1CE92DB300D47725 /* BridgingBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgingBoxTests.swift; sourceTree = "<group>"; };
 		83F3AFCE1CE92DB300D47725 /* CashierExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashierExtensionTests.swift; sourceTree = "<group>"; };
+		8646BDA7275F6E930027D0BC /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = ../Alamofire.xcframework; sourceTree = "<group>"; };
+		8646BDA8275F6E930027D0BC /* Cashier.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cashier.xcframework; path = ../Cashier.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,8 +285,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01BBEFD91DE1D537003AC718 /* Cashier.framework in Frameworks */,
-				01BBEFD81DE1D537003AC718 /* Alamofire.framework in Frameworks */,
+				8646BDAB275F6F7A0027D0BC /* Alamofire.xcframework in Frameworks */,
+				8646BDAE275F6F7B0027D0BC /* Cashier.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +356,8 @@
 		01BBEFB91DE1D50F003AC718 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				01BBEFBE1DE1D50F003AC718 /* Alamofire.framework */,
-				01BBEFC11DE1D50F003AC718 /* Cashier.framework */,
+				8646BDA7275F6E930027D0BC /* Alamofire.xcframework */,
+				8646BDA8275F6E930027D0BC /* Cashier.xcframework */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -574,6 +591,7 @@
 				272F1DC21C6A392A0098F620 /* Frameworks */,
 				272F1DC31C6A392A0098F620 /* Headers */,
 				272F1DC41C6A392A0098F620 /* Resources */,
+				8646BDAD275F6F7A0027D0BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1139,7 +1157,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -1164,7 +1183,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Serpent/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.Serpent;
 				PRODUCT_NAME = Serpent;
 				SKIP_INSTALL = YES;
@@ -1187,7 +1210,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Serpent/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.Serpent;
 				PRODUCT_NAME = Serpent;
 				SKIP_INSTALL = YES;
@@ -1201,7 +1228,12 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../Carthage/Build/iOS\"";
 				INFOPLIST_FILE = SerpentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks \"$(PROJECT_DIR)/../Carthage/Build/iOS\"";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"\"$(PROJECT_DIR)/../Carthage/Build/iOS\"",
+				);
 				OTHER_SWIFT_FLAGS = "-D TEST_MEMORY_WARNING";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.SerpentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1216,7 +1248,12 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../Carthage/Build/iOS\"";
 				INFOPLIST_FILE = SerpentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks \"$(PROJECT_DIR)/../Carthage/Build/iOS\"";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"\"$(PROJECT_DIR)/../Carthage/Build/iOS\"",
+				);
 				OTHER_SWIFT_FLAGS = "-D TEST_MEMORY_WARNING";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.SerpentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1237,7 +1274,11 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../Carthage/Build/watchOS\"";
 				INFOPLIST_FILE = "$(SRCROOT)/Serpent/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodes.Serpent-watchOS";
 				PRODUCT_NAME = Serpent;
 				SDKROOT = watchos;
@@ -1259,7 +1300,11 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../Carthage/Build/watchOS\"";
 				INFOPLIST_FILE = "$(SRCROOT)/Serpent/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodes.Serpent-watchOS";
 				PRODUCT_NAME = Serpent;
 				SDKROOT = watchos;
@@ -1281,7 +1326,11 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../Carthage/Build/tvOS\"";
 				INFOPLIST_FILE = "$(SRCROOT)/Serpent/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodes.Serpent-tvOS";
 				PRODUCT_NAME = Serpent;
 				SDKROOT = appletvos;
@@ -1303,7 +1352,11 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../Carthage/Build/tvOS\"";
 				INFOPLIST_FILE = "$(SRCROOT)/Serpent/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodes.Serpent-tvOS";
 				PRODUCT_NAME = Serpent;
 				SDKROOT = appletvos;
@@ -1318,7 +1371,12 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../Carthage/Build/tvOS\"";
 				INFOPLIST_FILE = SerpentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks \"$(PROJECT_DIR)/../Carthage/Build/tvOS\"";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"\"$(PROJECT_DIR)/../Carthage/Build/tvOS\"",
+				);
 				OTHER_SWIFT_FLAGS = "-D TEST_MEMORY_WARNING";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodes.Serpent-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1332,7 +1390,12 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../Carthage/Build/tvOS\"";
 				INFOPLIST_FILE = SerpentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks \"$(PROJECT_DIR)/../Carthage/Build/tvOS\"";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"\"$(PROJECT_DIR)/../Carthage/Build/tvOS\"",
+				);
 				OTHER_SWIFT_FLAGS = "-D TEST_MEMORY_WARNING";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodes.Serpent-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1355,7 +1418,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Serpent/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.Serpent;
 				PRODUCT_NAME = Serpent;
 				SDKROOT = macosx;
@@ -1377,7 +1444,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Serpent/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.Serpent;
 				PRODUCT_NAME = Serpent;
 				SDKROOT = macosx;
@@ -1392,7 +1463,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../Carthage/Build/Mac\"";
 				INFOPLIST_FILE = SerpentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks \"$(PROJECT_DIR)/../Carthage/Build/Mac\"";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+					"\"$(PROJECT_DIR)/../Carthage/Build/Mac\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodes.Serpent-OSXTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1407,7 +1483,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../Carthage/Build/Mac\"";
 				INFOPLIST_FILE = SerpentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks \"$(PROJECT_DIR)/../Carthage/Build/Mac\"";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+					"\"$(PROJECT_DIR)/../Carthage/Build/Mac\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodes.Serpent-OSXTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
